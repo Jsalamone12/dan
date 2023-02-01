@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<head>
+    <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>Offer Calculator</title>
+    </head>
+<body>
+    <h1>Offer Calculator</h1>
+    <h2>Property Info</h2>
+    <form>
+        <fieldset class="block">
+            <label for="propertyType">Property Type </label>
+            <select id="propertyType">
+                <option>Single Family Home
+                <option>Condominium
+                <option>Townhouse
+                <option>Multifamily Home (2-4 Units)
+                <option>Mobile Home
+                <option>Commercial Property
+            </select>
+            <br>
+            <label for="arvInput">After Repair Value</label>
+            <input placeholder="ARV" id="arvInput" type="number" value='' onchange="setArv()"> <br>
+            <label for="repairsInput">Repairs Needed</label>
+            <input placeholder="$ Repairs Needed" id="repairsInput" type="number" step="1000" value=""
+                onchange="setRepairValue()"> <br>
+        </fieldset>
+    </form>
+    <h2>Estimated Expenses</h2>
+    <div id="realtorCommissions">Realtor Commissions: $</div>
+    <div id='closingCosts'>Closing Costs: $</div>
+    <div id="holdingCosts">Holding Costs: $</div>
+    <div id="roi">ROI: $</div>
+    <div id="repairContingency">Repair Contingency: $</div>
+    <div id="risk">Risk margin: $</div>
+
+    <h2>Offers</h2>
+
+    <div id="cashOffer">Cash Offer:</div>
+    <div id="listAsIsOffer">List As-Is:</div>
+    <div id="wehabOffer">WeHab:</div>
+    <script src="script.js"></script>
+</body>
